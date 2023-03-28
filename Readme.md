@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Амир Мухамедьянов](https://up.htmlacademy.ru/adaptive/28/user/1582947).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
