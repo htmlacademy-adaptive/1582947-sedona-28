@@ -2,6 +2,7 @@
 
 * Студент: [Амир Мухамедьянов](https://up.htmlacademy.ru/adaptive/28/user/1582947).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+# [Ссылка на проект](https://kudesnik0027.github.io/1582947-sedona-28/source/index.html)
 
 ---
 
