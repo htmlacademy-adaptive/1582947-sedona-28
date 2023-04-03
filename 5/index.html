@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <base href="https://htmlacademy-adaptive.github.io/1582947-sedona-28/5/">
+</head>
+
+<body>
+  <header class="header">
+    <a class="logo" href="./index.html">
+      <img src="./img/logo.svg" width="185" height="96" alt="Логотип Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav-list menu-list">
+        <li class="menu-list__item menu-list__item--current">
+          <a class="menu-list__link" href="./index.html">Главная</a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="./photo-and-video.html">Фото и видео</a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="./feedback-form.html">Форма отзыва</a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="hero-block">
+      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+      <img src="./img/back-mobile.jpg@2x.jpg" alt="Добро пожаловать в Седону" width="320" height="389">
+    </section>
+    <section class="advantages">
+      <h1 class="visually-hidden">Преимущества Седоны</h1>
+      <div class="advantages__text-container">
+        <h2 class="advantages__info-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="advantages__info-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
+      <ul class="advantages-list">
+        <li class="advantages-item">
+          <div class="advantages-item-container">
+            <h3 class="advantages-item__title">Настоящий городок</h3>
+            <p class="advantages-item__description">— №1 —</p>
+            <p class="advantages-item__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <img src="./img/photo-city@1x-1.jpg" alt="Фото города" width="320" height="260">
+          <ul class="services-list">
+            <li class="services-item services-item--home">
+              <div class="services-item__container">
+                <h3 class="services-item__title  ">Жильё</h3>
+                <p class="services-item__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </div>
+            </li>
+            <li class="services-item services-item--food">
+              <div class="services-item__container">
+                <h3 class="services-item__title">Еда</h3>
+                <p class="services-item__description">Всегда заказывайте фирменный, Вы не разочаруетесь!</p>
+              </div>
+            </li>
+            <li class="services-item services-item--souvenirs">
+              <div class="services-item__container">
+                <h3 class="services-item__title">Сувениры</h3>
+                <p class="services-item__description">Не только китайского, но и местного производства!</p>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="advantages-item">
+          <div class="advantages-item__container">
+            <h3 class="advantages-item__title">Там есть мост дьявола</h3>
+            <p class="advantages-item__description">— №2 —</p>
+            <p class="advantages-item__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+          <img src="./img/photo-bridge@1x-1.jpg" alt="Фото моста" width="320" height="260">
+        </li>
+        <li class="advantages-item">
+          <div class="advantages-item__container">
+            <h3 class="advantages-item__title">Небольшая площадь</h3>
+            <p class="advantages-item__description">— №3 —</p>
+            <p class="advantages-item__description">Все интересные места находятся очень близко</p>
+          </div>
+        </li>
+        <li class="advantages-item">
+          <div class="advantages-item__container">
+            <h3 class="advantages-item__title">Красивая дорога</h3>
+            <p class="advantages-item__description">— №4 —</p>
+            <p class="advantages-item__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+        <li class="advantages-item">
+          <div class="advantages-item__container">
+            <h3 class="advantages-item__title">Мало туристов</h3>
+            <p class="advantages-item__description">— №5 —</p>
+            <p class="advantages-item__description">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="appointment">
+      <h1 class="visually-hidden">Поиск гостиницы в Седоне</h1>
+      <h3 class="appointment__title">Заинтересовались?</h3>
+      <p class="appointment__description">
+        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <a class="button button--search">Найти гостиницу</a>
+    </section>
+    <section class="map">
+      <h1 class="visually-hidden">Карта</h1>
+      <img src="./img/map-mobile.jpg.jpg" alt="Карта">
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="hashtag">#Visitsedona</p>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link">
+          <span class="visually-hidden">Ссылка на Вконтакте</span>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link">
+          <span class="visually-hidden">Ссылка на Телеграм</span>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link">
+          <span class="visually-hidden">Ссылка на Ютюб</span>
+        </a>
+      </li>
+    </ul>
+    <a class="developer-link" href="https://htmlacademy.ru/">Разработано
+      <svg width="29" height="35" viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"
+          fill="black" />
+      </svg>
+    </a>
+  </footer>
+</body>
+
+</html>
