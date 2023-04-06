@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+
+
+<body>
+  <header class="header">
+    <a class="logo" href="./index.html">
+      <img src="./img/logo.svg" width="185" height="96" alt="Логотип Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav-list menu-list">
+        <li class="menu-list__item ">
+          <a class="menu-list__link" href="./index.html">Главная</a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="./media.html">Фото и видео</a>
+        </li>
+        <li class="menu-list__item menu-list__item--current">
+          <a class="menu-list__link" href="./form.html">Форма отзыва</a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="media">
+      <h1 class="media-title">Фото и видео</h1>
+      <p class="media-description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+        политике и экономике.</p>
+      <ul class="media-list">
+        <li class="media-list__item">
+          <img class="road" src="./img/road-mobile.jpg" alt="Неродные просторы" width="280" height="280">
+          <div class="media-text-container">
+            <h3>Неродные просторы</h3>
+            <p class="media-list__author">Автор фото: Борис</p>
+          </div>
+          <div class="button-media-container">
+            <button class="like"></button>
+            <span class="coun-like">1350</span>
+          </div>
+        </li>
+        <li class="media-list__item">
+          <img class="grass" src="./img/grass-mobile.jpg.jpg" alt="Местная растительность" width="280" height="280">
+          <div class="media-text-container">
+            <h3 class="media-list__title">Местная растительность</h3>
+            <p class="media-list__author">Автор фото: Сергей</p>
+          </div>
+          <div class="button-media-container">
+            <button class="like"></button>
+            <span class="coun-like">143</span>
+          </div>
+        </li>
+        <li class="media-list__item">
+          <img class="north-road" src="./img/north-road-mobile.jpg.jpg" alt="Дорога на север" width="280" height="280">
+          <div class="media-text-container">
+            <h3 class="media-list__title">Дорога на север</h3>
+            <p class="media-list__author">Автор фото: Петр</p>
+          </div>
+          <div class="button-media-container">
+            <button class="like"></button>
+            <span class="coun-like">96</span>
+          </div>
+        </li>
+        <li class="media-list__item">
+          <img class="devils-bridge" src="./img/divils-north-mobile.jpg" alt="Мост дьявола" width="280" height="280">
+          <div class="media-text-container">
+            <h3 class="media-list__title">Мост дьявола</h3>
+            <p class="media-list__author">Автор фото: Антон</p>
+          </div>
+          <div class="button-media-container">
+            <button class="like"></button>
+            <span class="coun-like">254</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="hashtag">#Visitsedona</p>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link">
+          <span class="visually-hidden">Ссылка на Вконтакте</span>
+        </a>
+      </li>
+
+      <li class="social-list__item">
+        <a class="social-list__link">
+          <span class="visually-hidden">Ссылка на Телеграм</span>
+        </a>
+      </li>
+
+      <li class="social-list__item">
+        <a class="social-list__link">
+          <span class="visually-hidden">Ссылка на Ютюб</span>
+        </a>
+      </li>
+    </ul>
+    <a class="developer-link" href="https://htmlacademy.ru/">Разработано
+      <svg width="29" height="35" viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"
+          fill="black" />
+      </svg>
+    </a>
+  </footer>
+</body>
+
+</html>
