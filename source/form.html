@@ -54,15 +54,15 @@
         <ul class="personal-info-list">
           <li class="personal-info-list__item">
             <label for="name" class="personal-info-list__label">Имя<sup>*</sup>:</label>
-            <input type="text" name="name" id="name" value="Пётр" required>
+            <input class="personal-info-list__input" type="text" name="name" id="name" value="Пётр" required>
           </li>
           <li class="personal-info-list__item">
             <label for="first-name" class="personal-info-list__label">Фамилия<sup>*</sup>:</label>
-            <input type="text" name="first-name" id="first-name" value="Пустота"required>
+            <input class="personal-info-list__input" type="text" name="first-name" id="first-name" value="Пустота"required>
           </li>
           <li class="personal-info-list__item">
             <label for="last-name" class="personal-info-list__label">Отчество:</label>
-            <input type="text" name="last-name" id="last-name" value="Викторович">
+            <input class="personal-info-list__input" type="text" name="last-name" id="last-name" value="Викторович">
           </li>
         </ul>
       </fieldset>
@@ -72,12 +72,12 @@
         <ul class="contact-list">
           <li class="contact-list__item">
             <label for="phone" class="contact-list__label">Контактная информация<sup>*</sup>:</label>
-            <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+            <input class="contact-list__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
             <span class="phone-icon"></span>
           </li>
           <li class="contact-list__item">
             <label for="email" class="contact-list__label">Электронная почта<sup>*</sup>:</label>
-            <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
+            <input class="contact-list__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
             <span class="email-icon"></span>
           </li>
         </ul>
@@ -87,43 +87,43 @@
         <legend class="feedback-group__title">Ваши общие впечатление:</legend>
         <ul class="impressions-list">
           <li class="impressions-list__item">
-            <input type="radio" name="positive" id="positive" checked>
-            <label for="positive" class="impressions-list__label">Скорее положительное</label>
+            <input class="control-input" type="radio" name="positive" id="positive" checked>
+            <label for="positive" class="impressions-list__label control-radio">Скорее положительное</label>
             <span class="check-checkbox"></span>
           </li>
           <li class="impressions-list__item">
-            <input type="radio" name="negative" id="negative">
-            <label for="negative" class="impressions-list__label">Скорее отрицательное</label>
+            <input class="control-input" type="radio" name="negative" id="negative">
+            <label for="negative" class="impressions-list__label control-radio">Скорее отрицательное</label>
             <span class="check-checkbox"></span>
           </li>
           <li class="impressions-list__item">
-            <input type="radio" name="neutral" id="neutral">
-            <label for="neutral" class="impressions-list__label">Затрудняюсь ответить</label>
+            <input  class="control-input" type="radio" name="neutral" id="neutral">
+            <label for="neutral" class="impressions-list__label control-radio">Затрудняюсь ответить</label>
             <span class="check-checkbox"></span>
           </li>
         </ul>
       </fieldset>
 
       <fieldset class="feedback-group">
-        <legend class="feedback-group__title">Ваши общие впечатление:</legend>
+        <legend class="feedback-group__title">Посещенные достопримечательности:</legend>
         <ul class="visit-list">
           <li class="visit-list__item">
-            <input type="checkbox" name="devils-bridge" id="devils-bridge" checked>
+            <input class="checkbox" type="checkbox" name="devils-bridge" id="devils-bridge" checked>
             <label for="devils-bridge" class="visit-list__label">Мост Дьявола</label>
             <span class="check-radio"></span>
           </li>
           <li class="visit-list__item">
-            <input type="checkbox" name="mount-bell" id="mount-bell" checked>
+            <input class="checkbox" type="checkbox" name="mount-bell" id="mount-bell" checked>
             <label for="mount-bell" class="visit-list__label">Гора-Колокол </label>
             <span class="check-radio"></span>
           </li>
           <li class="visit-list__item">
-            <input type="checkbox" name="slide-park" id="slide-park" checked>
+            <input class="checkbox" type="checkbox" name="slide-park" id="slide-park" checked>
             <label for="slide-park" class="visit-list__label">Слайд-парк</label>
             <span class="check-radio"></span>
           </li>
           <li class="visit-list__item">
-            <input type="checkbox" name="red-rocks" id="red-rocks">
+            <input  type="checkbox" name="red-rocks" id="red-rocks">
             <label for="red-rocks" class="visit-list__label">Красные скалы</label>
             <span class="check-radio"></span>
           </li>
@@ -134,20 +134,19 @@
         <legend class="feedback-group__title">Опишите свои эмоции:</legend>
         <textarea class="emotions-area" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"
           cols="25" rows="5"></textarea>
-        <button class="send-feedback" type="submit">Отправить отзыв</button>
-        <span class="required-text"><sup>*</sup>-Обязательные поля</span>
+        <button class="button send-feedback" type="submit">Отправить отзыв</button>
+        <span class="required-text"><sup>*</sup>—Обязательные поля</span>
       </fieldset>
 
     </form>
   </main>
 
 
-
   <footer class="footer">
     <p class="hashtag">#Visitsedona</p>
     <ul class="social-list">
       <li class="social-list__item">
-        <a class="social-list__link">
+        <a class="social-list__link" href="#">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_61790_474)">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -164,18 +163,17 @@
         </a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link">
+        <a class="social-list__link" href="#">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M22.4393 4.62225L19.2705 19.566C19.0313 20.6205 18.408 20.883 17.5223 20.3865L12.6938 16.8285L10.3643 19.0695C10.1063 19.3275 9.891 19.5428 9.39375 19.5428L9.74101 14.6258L18.6893 6.54C19.0785 6.1935 18.6045 6.00075 18.0848 6.348L7.02225 13.314L2.25976 11.823C1.22401 11.4998 1.20526 10.7873 2.47576 10.29L21.1035 3.11325C21.966 2.79 22.7205 3.30525 22.4393 4.623V4.62225Z"
               fill="white" />
           </svg>
-
           <span class="visually-hidden">Ссылка на Телеграм.</span>
         </a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link">
+        <a class="social-list__link" href="#">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"
@@ -202,7 +200,7 @@
     </div>
     <div class="modal modal-send">
       <h3 class="modal-send__title">Ваш отзыв отправлен!</h3>
-      <p class="modal-send__discription">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+      <p class="modal-send__discription">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы
         опубликуем его на сайте.</p>
       <button class="button button-send">Закрыть окно</button>
     </div>

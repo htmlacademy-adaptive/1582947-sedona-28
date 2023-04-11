@@ -1,0 +1,105 @@
+
+.advantages__info-title {
+  .text-title;
+  text-align: center;
+  padding: 33px 26px 0 23px;
+}
+
+.advantages__info-description {
+  .text-description;
+  text-align: center;
+  padding: 37px 18px 16px 18px;
+}
+
+//Поломался по не могу понять почему.
+.triangle {
+  background-image: url("../img/triangle.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.advantages-item {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
+.color-container {
+  .set-color(#81b3d2);
+}
+
+.advantages-item:first-child .advantages-item__title {
+  padding-top: 70px;
+}
+
+.advantages-item:nth-child(2) .advantages-item__title {
+  padding-top: 37px;
+}
+
+.advantages-item__title {
+  .text-title;
+  text-align: center;
+}
+
+.advantages-item__description-n {
+  .text-description;
+  text-align: center;
+  padding-top: 11px;
+}
+
+.advantages-item__description {
+  .text-description;
+  text-align: center;
+  padding: 17px 12px 38px 12px;
+}
+
+.set-color(@color-container) {
+  background-color: @color-container;
+}
+
+.set-color(@color-container) when (lightness(@color-container) >= 50%) {
+  color: #ffffff;
+}
+
+
+
+.advantages-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages-item:nth-child(3),
+.advantages-item:nth-child(4),
+.advantages-item:nth-child(5) {
+  background-color: @gray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .advantages-item__container {
+    padding: 25px 8px 24px 8px;
+    display: flex;
+    width: 258px;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 -1px 0 0 #b3b2b2 inset;
+  }
+
+  .advantages-item__title {
+    padding: 0 8px 0 8px;
+  }
+
+  .advantages-item__description-n {
+  }
+
+  .advantages-item__description {
+    padding: 18px 2px 0 2px;
+  }
+}
+
+.advantages-item:last-child .advantages-item__container {
+  box-shadow: none;
+}
