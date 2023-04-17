@@ -1,22 +1,24 @@
 
 .text-title() {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  padding: 0;
-  margin: 0;
+  margin: 0; //без него не получается.
 }
 
 .text-description() {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  padding: 0;
   margin: 0;
+}
+
+.set-color(@color-container) {
+  background-color: @color-container;
+}
+
+.set-color(@color-container) when (lightness(@color-container) >= 50%) {
+  color: #ffffff;
 }
