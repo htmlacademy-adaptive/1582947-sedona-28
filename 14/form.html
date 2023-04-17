@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/1582947-sedona-28/14/">
+</head>
+
+
+
+<body class="body">
+  <header class="header">
+    <a class="logo" href="./index.html">
+      <img src="./img/logo.svg" width="185" height="96" alt="Логотип Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav-list menu-list">
+        <li class="menu-list__item ">
+          <a class="menu-list__link" href="./index.html">Главная</a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="./media.html">Фото и видео</a>
+        </li>
+        <li class="menu-list__item menu-list__item--current">
+          <a class="menu-list__link" href="./form.html">Форма отзыва</a>
+        </li>
+        <li class="menu-list__item">
+          <a class="menu-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <main class="main">
+    <section class="hero-block-media">
+      <h1 class="visually-hidden">Cедону.</h1>
+      <img class="logo-catalog" src="./img/sedona.svg" alt="Добро пожаловать в Седону" width="239" height="39">
+    </section>
+    <h2 class="feedback-title">Оставьте свой отзыв</h2>
+    <p class="feedback-description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+      достопримечательностях</p>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="get">
+
+      <fieldset class="feedback-group">
+        <legend class="feedback-group__title">Представьтесь</legend>
+        <ul class="personal-info-list">
+          <li class="personal-info-list__item">
+            <label for="name" class="personal-info-list__label">Имя<sup>*</sup>:</label>
+            <input class="personal-info-list__input" type="text" name="name" id="name" value="Пётр" required>
+          </li>
+          <li class="personal-info-list__item">
+            <label for="first-name" class="personal-info-list__label">Фамилия<sup>*</sup>:</label>
+            <input class="personal-info-list__input" type="text" name="first-name" id="first-name" value="Пустота" required>
+          </li>
+          <li class="personal-info-list__item">
+            <label for="last-name" class="personal-info-list__label">Отчество:</label>
+            <input class="personal-info-list__input" type="text" name="last-name" id="last-name" value="Викторович">
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="feedback-group">
+        <legend class="feedback-group__title">Контактная информация:</legend>
+        <ul class="contact-list">
+          <li class="contact-list__item">
+            <label for="phone" class="contact-list__label">Контактная информация<sup>*</sup>:</label>
+            <input class="contact-list__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+            <span class="phone-icon"></span>
+          </li>
+          <li class="contact-list__item">
+            <label for="email" class="contact-list__label">Электронная почта<sup>*</sup>:</label>
+            <input class="contact-list__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+            <span class="email-icon"></span>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="feedback-group">
+        <legend class="feedback-group__title">Ваши общие впечатление:</legend>
+        <ul class="impressions-list">
+          <li class="impressions-list__item">
+            <input class="control-input" type="radio" name="positive" id="positive" checked>
+            <label for="positive" class="impressions-list__label control-radio">Скорее положительное</label>
+            <span class="check-checkbox"></span>
+          </li>
+          <li class="impressions-list__item">
+            <input class="control-input" type="radio" name="negative" id="negative">
+            <label for="negative" class="impressions-list__label control-radio">Скорее отрицательное</label>
+            <span class="check-checkbox"></span>
+          </li>
+          <li class="impressions-list__item">
+            <input  class="control-input" type="radio" name="neutral" id="neutral">
+            <label for="neutral" class="impressions-list__label control-radio">Затрудняюсь ответить</label>
+            <span class="check-checkbox"></span>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="feedback-group">
+        <legend class="feedback-group__title">Посещенные достопримечательности:</legend>
+        <ul class="visit-list">
+          <li class="visit-list__item">
+            <input class="checkbox" type="checkbox" name="devils-bridge" id="devils-bridge" checked>
+            <label for="devils-bridge" class="visit-list__label">Мост Дьявола</label>
+            <span class="check-radio"></span>
+          </li>
+          <li class="visit-list__item">
+            <input class="checkbox" type="checkbox" name="mount-bell" id="mount-bell" checked>
+            <label for="mount-bell" class="visit-list__label">Гора-Колокол </label>
+            <span class="check-radio"></span>
+          </li>
+          <li class="visit-list__item">
+            <input class="checkbox" type="checkbox" name="slide-park" id="slide-park" checked>
+            <label for="slide-park" class="visit-list__label">Слайд-парк</label>
+            <span class="check-radio"></span>
+          </li>
+          <li class="visit-list__item">
+            <input  type="checkbox" name="red-rocks" id="red-rocks">
+            <label for="red-rocks" class="visit-list__label">Красные скалы</label>
+            <span class="check-radio"></span>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="feedback-group">
+        <legend class="feedback-group__title">Опишите свои эмоции:</legend>
+        <textarea class="emotions-area" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"
+          cols="25" rows="5"></textarea>
+        <button class="button send-feedback" type="submit">Отправить отзыв</button>
+        <span class="required-text"><sup>*</sup>—Обязательные поля</span>
+      </fieldset>
+
+    </form>
+  </main>
+
+
+  <footer class="footer">
+    <p class="hashtag">#Visitsedona</p>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_61790_474)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_61790_474">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="visually-hidden">Ссылка на Вконтакте.</span>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22.4393 4.62225L19.2705 19.566C19.0313 20.6205 18.408 20.883 17.5223 20.3865L12.6938 16.8285L10.3643 19.0695C10.1063 19.3275 9.891 19.5428 9.39375 19.5428L9.74101 14.6258L18.6893 6.54C19.0785 6.1935 18.6045 6.00075 18.0848 6.348L7.02225 13.314L2.25976 11.823C1.22401 11.4998 1.20526 10.7873 2.47576 10.29L21.1035 3.11325C21.966 2.79 22.7205 3.30525 22.4393 4.623V4.62225Z"
+              fill="white" />
+          </svg>
+          <span class="visually-hidden">Ссылка на Телеграм.</span>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"
+              fill="white" />
+          </svg>
+          <span class="visually-hidden">Ссылка на Ютюб.</span>
+        </a>
+      </li>
+    </ul>
+      <a class="developer-link" href="https://htmlacademy.ru/">Разработано
+        <svg class="developer-logo" width="29" height="35" viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"
+            fill="black" />
+        </svg>
+      </a>
+  </footer>
+
+  <div class="modal-container open-modal">
+    <div class="modal modal-error">
+      <h3 class="modal-error__title">Что-то пошло не так!</h3>
+      <p class="modal-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button button--error">Ок</button>
+    </div>
+    <div class="modal modal-send">
+      <h3 class="modal-send__title">Ваш отзыв отправлен!</h3>
+      <p class="modal-send__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы
+        опубликуем его на сайте.</p>
+      <button class="button button--send">Закрыть окно</button>
+    </div>
+  </div>
+</body>
+
+</html>
