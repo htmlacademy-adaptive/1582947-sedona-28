@@ -1,17 +1,22 @@
 
 .body {
-  background-color: #ffffff;
   width: 320px;
   margin: 0 auto;
   padding: 0;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
+  background-color: @background-global;
 }
 
 .header {
   display: flex;
   flex-direction: row;
   height: 56px;
+  background-color: @background-page;
+}
+
+main {
+  background-color: @background-page;
 }
 
 .footer {
@@ -22,4 +27,5 @@
   gap: 30px;
   padding: 0;
   margin: 0;
+  background-color: @background-page;
 }
