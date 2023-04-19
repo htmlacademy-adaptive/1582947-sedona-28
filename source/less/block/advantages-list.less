@@ -1,14 +1,16 @@
-
 .advantages-list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .advantages-list__item {
   padding: 0;
   margin: 0;
   line-height: 0;
+  width: 100%;
 }
 
 .advantages-list__item:first-child .advantages-list__container {
@@ -18,12 +20,18 @@
   background-position: top;
 }
 
-.advantages-list__container--color-container {
-  .set-color(#81b3d2);
+
+.advantages-list__item:first-child .advantages-list__title {
+  padding: 0;
 }
 
-.advantages-list:first-child .advantages-list__title {
-  padding-top: 70px;
+.advantages-list__item:first-child .advantages-list__description {
+  padding: 17px 0 0 0;
+}
+
+
+.advantages-list__container--color-container {
+  .set-color(#81b3d2);
 }
 
 .advantages-list:nth-child(2) .advantages-list__title {
@@ -36,7 +44,7 @@
   padding-top: 54px;
 }
 
-.advantages-list__container--color-container .advantages-list__description-n {
+.advantages-list__container--color-container .advantages-list__description-counter {
   .text-description;
   text-align: center;
   padding-top: 11px;
@@ -48,46 +56,39 @@
   padding: 17px 12px 38px 12px;
 }
 
-.advantages-list--accent {
+.advantages-list__item--accent {
   background-color: @advantages-list--accent;
+  padding: 0 24px 0 24px;
+}
+
+.advantages-list__item--accent .advantages-list__container {
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
-}
-
-.advantages-list__container {
-  display: flex;
   align-items: center;
-  flex-direction: column;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 0 12px 0 12px;
 }
 
-// border-bottom: 2px solid #b3b2b2;
-
-.advantages-list--accent .advantages-list__container {
-  margin: 0 18px 0 18px;
-  padding: 26px 0 26px 0;
-  border-bottom: 1px solid #b3b2b2;
+.advantages-list__item--accent:last-child .advantages-list__container {
+  border-bottom: none;
 }
 
-.advantages-list--accent:last-child .advantages-list__container {
-  border: none;
-}
-
-.advantages-list--accent .advantages-list__title {
+.advantages-list__item--accent .advantages-list__title {
   .text-title;
   text-align: center;
-  padding: 0 17px 0 17px;
+  margin-top: 24px;
 }
 
-.advantages-list--accent .advantages-list__description-n {
+.advantages-list__item--accent .advantages-list__description-counter {
   .text-description;
   text-align: center;
-  padding-top: 11px;
+  margin-top: 11px;
 }
 
-.advantages-list--accent .advantages-list__description {
+.advantages-list__item--accent .advantages-list__description {
   .text-description;
   text-align: center;
-  padding: 17px 14px 0 14px;
+  margin-bottom: 26px;
+  margin-top: 16px;
 }

@@ -1,7 +1,9 @@
 .hero-block {
+  display: flex;
+  justify-content: center;
   position: relative;
   background-image: url("../img/divider.svg"), url("../img/back-mobile.jpg");
-  background-size: auto, auto;
+  background-size: 100%, 100%;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center;
   line-height: 0;
@@ -9,9 +11,6 @@
 }
 
 .hero-block--media {
-  .hero-block;
-  background-image: url("../img/divider.svg"), url(../img/back-desktop.jpg);
-  line-height: 0;
+  background-image: url("../img/divider.svg"), url("../img/back-desktop.jpg");
   padding: 52px 46px 67px 46px;
 }
-
