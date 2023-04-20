@@ -46,24 +46,16 @@
 .advantages-list__item--accent {
   background-color: @advantages-list--accent;
   padding: 0 24px 0 24px;
-
-  .advantages-list__title {
-    margin: 24px 0 0 0;
-  }
-
-  .advantages-list__description {
-    margin: 17px 0 24px 0;
-  }
-
-  .advantages-list__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid #d6d6d6;
-    padding: 0 12px 0 12px;
-  }
 }
 
-.advantages-list__item--accent:last-child .advantages-list__container {
+.advantages-list__container--accent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 24px 12px 24px 12px;
+}
+
+.advantages-list__item--accent:last-child .advantages-list__container--accent {
   border-bottom: none;
 }
