@@ -1,0 +1,22 @@
+
+.text-title() {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.text-description() {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.set-color(@color-container) {
+  background-color: @color-container;
+}
+
+.set-color(@color-container) when (lightness(@color-container) >= 50%) {
+  color: #ffffff;
+}
