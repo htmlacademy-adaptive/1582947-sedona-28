@@ -8,9 +8,31 @@
   background-position: bottom, center;
   line-height: 0;
   padding: 90px 19px 85px 19px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/intro-triangle-tablet.svg"), url("../img/back-index-tablet.jpg");
+    padding: 77px 154px 91px 154px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop.jpg");
+    padding: 78px 154px 90px 154px;
+  }
 }
 
 .hero-block--media {
+  display: flex;
+  justify-content: center;
+  position: relative;
   background-image: url("../img/intro-triangle-tablet.svg"), url("../img/back-desktop.jpg");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, center;
+  line-height: 0;
   padding: 52px 46px 67px 46px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/intro-triangle-tablet.svg"), url("../img/back-desktop.jpg");
+    padding: 95px 154px 117px 154px;
+  }
 }

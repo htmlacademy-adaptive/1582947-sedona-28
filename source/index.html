@@ -43,12 +43,19 @@
       <p class="advantages__info-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <ul class="advantages-list">
         <li class="advantages-list__item">
-          <div class="advantages-list__container advantages-list__container--color-container triangle">
-            <h3 class="advantages-list__title">Настоящий городок</h3>
-            <p class="advantages-list__description-counter">— №1 —</p>
-            <p class="advantages-list__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="advantages-list__block">
+            <div class="advantages-list__container advantages-list__container--color-container triangle">
+              <h3 class="advantages-list__title">Настоящий городок</h3>
+              <p class="advantages-list__description-counter">— №1 —</p>
+              <p class="advantages-list__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <picture>
+              <source media="(max-width: 767px)" srcset="./img/photo-city@1x-1.jpg">
+              <source media="(max-width: 1199px)" srcset="./img/photo-city@1x-tablet.jpg">
+              <source media="(min-width: 1200px)" srcset="./img/photo-city@1x-desktop.jpg">
+              <img src="./img/photo-city@1x-1.jpg" alt="" width="800" height="400">
+            </picture>
           </div>
-          <img src="./img/photo-city@1x-1.jpg" alt="Фото города" width="320" height="260">
           <ul class="services-list">
             <li class="services-list__item services-list__item--home">
               <div class="services-list__container">
