@@ -36,19 +36,24 @@
   <main class="main">
     <section class="hero-block">
       <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
-      <img src="./img/text-index.svg" alt="Добро пожаловать в Седону" width="282" height="214">
+      <picture>
+        <source media="(max-width: 767px)" srcset="./img/text-index.svg">
+        <source media="(max-width: 1199px)" srcset="./img/text-index-tablet.svg">
+        <source media="(min-width: 1200px)" srcset="./img/text-index-desktop.svg">
+        <img src="./img/text-index.svg" alt="Добро пожаловать в Седону" width="282" height="214">
+      </picture>
     </section>
     <section class="advantages">
       <h2 class="advantages__info-title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
       <p class="advantages__info-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <ul class="advantages-list">
         <li class="advantages-list__item">
+          <div class="advantages-list__container advantages-list__container--color-container triangle">
+            <h3 class="advantages-list__title">Настоящий городок</h3>
+            <p class="advantages-list__description-counter">— №1 —</p>
+            <p class="advantages-list__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
           <div class="advantages-list__block">
-            <div class="advantages-list__container advantages-list__container--color-container triangle">
-              <h3 class="advantages-list__title">Настоящий городок</h3>
-              <p class="advantages-list__description-counter">— №1 —</p>
-              <p class="advantages-list__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            </div>
             <picture>
               <source media="(max-width: 767px)" srcset="./img/photo-city@1x-1.jpg">
               <source media="(max-width: 1199px)" srcset="./img/photo-city@1x-tablet.jpg">
@@ -78,12 +83,19 @@
           </ul>
         </li>
         <li class="advantages-list__item">
+          <div class="advantages-list__block">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./img/photo-city@1x-1.jpg">
+              <source media="(max-width: 1199px)" srcset="./img/photo-bridge@1x-tablet.jpg">
+              <source media="(min-width: 1200px)" srcset="./img/photo-bridge@1x-desktop.jpg">
+              <img src="./img/photo-bridge@1x-1.jpg" alt="" width="800" height="400">
+            </picture>
+          </div>
           <div class="advantages-list__container advantages-list__container--color-container">
             <h3 class="advantages-list__title">Там есть мост дьявола</h3>
             <p class="advantages-list__description-counter">— №2 —</p>
             <p class="advantages-list__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img src="./img/photo-bridge@1x-1.jpg" alt="Фото моста" width="320" height="260">
         </li>
         <li class="advantages-list__item advantages-list__item--accent">
           <div class="advantages-list__container advantages-list__container--accent">
@@ -115,7 +127,12 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <img src="./img/map-mobile.jpg" alt="Карта" width="280" height="177">
+      <picture>
+        <source media="(max-width: 767px)" srcset="./img/map-mobile.jpg">
+        <source media="(max-width: 1199px)" srcset="./img/map-tablet.jpg">
+        <source media="(min-width: 1200px)" srcset="./img/map-desktop.jpg">
+        <img src="./img/map-mobile.jpg" alt="Карта" width="282" height="214">
+      </picture>
     </section>
   </main>
   <footer class="footer">
