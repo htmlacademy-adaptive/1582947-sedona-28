@@ -1,0 +1,29 @@
+.personal-info-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 16px;
+  padding: 0;
+}
+
+.personal-info-list__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.personal-info-list__label {
+  .text-description();
+  padding-left: 16px;
+}
+
+.personal-info-list__input {
+  .text-title;
+  text-transform: capitalize;
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: @background-input;
+  outline: none;
+  border: none;
+}

@@ -1,0 +1,41 @@
+.button {
+  color: #ffffff;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: @button;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button--search {
+  display: block;
+  padding: 16px 49px;
+  box-sizing: border-box;
+  margin-top: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 44px;
+    width: 100%;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
+}
+
+.button--send {
+  .text-title;
+  margin-top: 50px;
+  padding: 14px 62px 16px 62px;
+  border: none;
+}
+
+.button--error {
+  padding: 18px 64px 16px 64px;
+  border: none;
+  margin: 28px 28px 0 28px;
+}

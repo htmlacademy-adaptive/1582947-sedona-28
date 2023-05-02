@@ -1,0 +1,28 @@
+.impressions-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0 0 39px 0;
+  margin: 0;
+  gap: 16px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.impressions-list__item {
+  display: flex;
+  align-items: center;
+}
+
+.impressions-list__label {
+  .text-title;
+  font-weight: 700;
+  text-transform: none;
+  padding-left: 16px;
+}
