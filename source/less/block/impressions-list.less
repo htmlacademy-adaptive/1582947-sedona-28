@@ -3,8 +3,16 @@
   flex-direction: column;
   list-style: none;
   padding: 0 0 39px 0;
-  margin: 0;
+  margin: 28px 0 48px 0;
   gap: 16px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 .impressions-list__item {

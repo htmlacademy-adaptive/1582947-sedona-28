@@ -1,13 +1,39 @@
+.doubts {
+  @media (min-width: @tablet-width) {
+    padding: 0 60px 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 200px 0 200px;
+  }
+}
+
 .doubts__title {
   .text-title;
   text-align: center;
   padding-top: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 58px 0 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 62px 0 0 0;
+  }
 }
 
 .doubts__description {
   .text-description();
   text-align: center;
   padding: 29px 26px 38px 26px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 54px 0 66px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 30px 0 64px 0;
+  }
 }
 
 .doubts__video {
@@ -15,4 +41,8 @@
   padding-right: 20px;
   width: 100%;
   height: 100%;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }

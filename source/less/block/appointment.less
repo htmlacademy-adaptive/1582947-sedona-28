@@ -1,9 +1,16 @@
-
 .appointment {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 41px 29px 0 29px;
+
+  @media (min-width: @tablet-width) {
+    padding: 60px 166px 55px 166px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 60px 371px 66px 371px;
+  }
 }
 
 .appointment__title {
@@ -16,6 +23,14 @@
   text-align: center;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+  }
 }
 
 .appointment__description {
@@ -23,4 +38,8 @@
   .text-description;
   text-align: center;
   margin: 20px 0 0 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 32px 0 0 0;
+  }
 }

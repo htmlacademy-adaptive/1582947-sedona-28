@@ -1,13 +1,60 @@
 .form__group {
   border: none;
-  padding: 0;
+  padding: 28px 0 0 0;
   margin: 0;
   display: flex;
   flex-direction: column;
 }
 
+.form__group:first-child {
+  @media (min-width: @tablet-width) {
+    padding: 0 28px 0 0;
+    border-right: 1px solid #0000004d;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 50px 0 0;
+  }
+}
+
+
+.form__group:nth-child(2) {
+  @media (min-width: @tablet-width) {
+    padding: 0 0 0 28px;
+    border-left: 1px solid #0000004d;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 0 50px;
+  }
+}
+
+.form__group:nth-child(n+3) {
+  @media (min-width: @tablet-width) {
+    grid-column: 1/-1;
+    border-top: 2px solid #0000004d;
+    align-items: center;
+  }
+}
+
 .form__title {
   .text-title;
   text-align: center;
-  padding: 0 0 20px 0;
+  padding: 0;
+  margin: 0;
+}
+
+.form__button-container {
+  padding: 56px 20px 22px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 48px 0 64px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
 }

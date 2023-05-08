@@ -13,9 +13,18 @@
 .button--search {
   display: block;
   padding: 16px 49px;
-  width: 284px;
   box-sizing: border-box;
   margin-top: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 44px;
+    width: 100%;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 }
 
 .button--send {
