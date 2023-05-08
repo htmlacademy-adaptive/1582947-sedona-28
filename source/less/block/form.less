@@ -1,6 +1,6 @@
 .form__group {
   border: none;
-  padding: 0;
+  padding: 28px 0 0 0;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
 }
 
 
-.form__group:first-child + fieldset {
+.form__group:nth-child(2) {
   @media (min-width: @tablet-width) {
     padding: 0 0 0 28px;
     border-left: 1px solid #0000004d;
@@ -40,6 +40,8 @@
 .form__title {
   .text-title;
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .form__button-container {
@@ -47,4 +49,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 48px 0 64px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
 }
