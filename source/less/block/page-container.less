@@ -1,10 +1,20 @@
 .page-container {
-  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   flex-grow: 1;
   background-color: #ffffff;
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  margin: 0 auto;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    background-color: @background-global-desktop;
+  }
 }
 
 .page-container--shadow {
