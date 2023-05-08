@@ -4,6 +4,7 @@
   flex-direction: column;
   padding: 0;
   margin: 0;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -21,11 +22,10 @@
 }
 
 .media-list__item {
-  display: flex;
-  flex-direction: column;
   padding: 24px 15px 25px 15px;
   border-top: 1px solid #e5e5e5;
   align-items: center;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -41,6 +41,8 @@
   }
 
   img {
+    width: 100%;
+
     @media (min-width: @tablet-width) {
       width: 100%;
       padding: 0;

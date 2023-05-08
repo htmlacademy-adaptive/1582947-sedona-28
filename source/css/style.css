@@ -400,6 +400,16 @@ a {
 .developer__img {
   margin-left: 12px;
 }
+@media (min-width: 768px) {
+  .doubts {
+    padding: 0 60px 0 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .doubts {
+    padding: 0 200px 0 200px;
+  }
+}
 .doubts__title {
   font-weight: 700;
   font-size: 18px;
@@ -444,12 +454,7 @@ a {
 }
 @media (min-width: 768px) {
   .doubts__video {
-    padding: 0 0 40px 0;
-  }
-}
-@media (min-width: 1200px) {
-  .doubts__video {
-    padding: 0 200px 84px 200px;
+    padding: 0;
   }
 }
 .emotions-area {
@@ -740,6 +745,7 @@ a {
   flex-direction: column;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .media-list {
@@ -758,11 +764,10 @@ a {
   }
 }
 .media-list__item {
-  display: flex;
-  flex-direction: column;
   padding: 24px 15px 25px 15px;
   border-top: 1px solid #e5e5e5;
   align-items: center;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .media-list__item {
@@ -778,6 +783,9 @@ a {
     width: 100%;
     border: none;
   }
+}
+.media-list__item img {
+  width: 100%;
 }
 @media (min-width: 768px) {
   .media-list__item img {
@@ -900,6 +908,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .media__title {
   font-weight: 700;
@@ -997,6 +1006,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.menu-list__item img {
+  width: 100%;
 }
 .menu-list__link {
   text-decoration: none;
