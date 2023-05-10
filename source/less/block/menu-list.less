@@ -39,13 +39,42 @@
   border-top: 1px solid #8ebad6;
   border-bottom: 1px solid #48687c;
 
+  @media (max-width: @mobile-width-only) {
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: #ffffff4d;
+    }
+
+    &:disabled {
+      background-color: #e5e5e5;
+      color: #ffffff;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0);
     color: #000000;
     border: none;
     padding: 0;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #0000004d;
+    }
+
+    &:disabled {
+      color: rgba(255, 255, 255, 0.1);
+    }
   }
+
 }
 
 .menu-list__item {
@@ -71,6 +100,18 @@
     color: #000000;
     border: none;
     padding: 0;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: #0000004d;
+    }
+
+    &:disabled {
+      color: rgba(255, 255, 255, 0.1);
+    }
   }
 }
 
@@ -89,3 +130,8 @@
   }
 }
 
+.menu-list__item--current a {
+  @media (min-width: @tablet-width) {
+    color: #766357;
+  }
+}
