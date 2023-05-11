@@ -16,13 +16,16 @@
   background-color: @background-social-link;
   padding: 12px;
 
-  &:hover path {
+  &:hover {
     background-color: #669ec0;
   }
 
-  &:active path {
+  &:active {
     background-color: #5496bd;
-    fill: rgba(255, 255, 255, 0.3);
+
+    & path {
+      fill: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &:disabled path {
