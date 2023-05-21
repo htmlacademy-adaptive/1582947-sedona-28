@@ -92,7 +92,6 @@
     background-color: fade(#ffffff, 30%);
   }
 }
-// отсюда скопировал с академии ===========================================================
 
 .main-nav--closed .menu-list__item {
   @media (max-width: @mobile-width-only) {
@@ -127,4 +126,14 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.main-nav--closed.main-nav--nojs .menu-list__item {
+  display: block;
+}
+
+.main-nav--closed.main-nav--nojs {
+  .main-nav__toggle {
+    display: none;
+  }
 }

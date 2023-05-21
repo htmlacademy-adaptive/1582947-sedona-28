@@ -710,9 +710,6 @@ a {
   position: relative;
   padding-left: 58px;
   cursor: pointer;
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 46px;
 }
@@ -863,6 +860,12 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.main-nav--closed.main-nav--nojs .menu-list__item {
+  display: block;
+}
+.main-nav--closed.main-nav--nojs .main-nav__toggle {
+  display: none;
 }
 .main {
   background-color: #ffffff;
@@ -1595,8 +1598,6 @@ a {
   position: relative;
   padding-left: 58px;
   cursor: pointer;
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 46px;
@@ -1628,7 +1629,7 @@ a {
   top: 13px;
   width: 22px;
   height: 16px;
-  background-image: url(../img/tick.svg);
+  background-image: url("../img/tick.svg");
 }
 .visually-hidden {
   position: fixed;
@@ -1643,7 +1644,7 @@ a {
 .checkbox {
   position: absolute;
   -webkit-appearance: none;
-  appearance: none;
+          appearance: none;
 }
 .check-radio {
   position: absolute;
@@ -1653,10 +1654,10 @@ a {
   height: 0.6em;
   overflow: hidden;
   border-radius: 0.05em;
-  background-color: white;
+  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  box-shadow: 0 0 0 0.1em #4A90E2;
+  box-shadow: 0 0 0 0.1em #4a90e2;
 }
 .checkbox:checked + .check-radio {
   background-color: #4a90e2;
