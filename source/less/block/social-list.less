@@ -15,4 +15,21 @@
   align-items: center;
   background-color: @background-social-link;
   padding: 12px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    & path {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &:disabled path {
+    background-color: #e5e5e5;
+    fill: #ffffff4d;
+  }
 }

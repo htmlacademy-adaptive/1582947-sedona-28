@@ -6,6 +6,10 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./favicon32.ico" type="image/svg+xml">
+  <link rel="icon" href="./favicon32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./favicon152.svg"> <!-- 152×152 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="body">
@@ -14,24 +18,24 @@
       <a class="logo" href="./index.html">
         <img class="logo-header" src="./img/logo.svg" width="185" height="96" alt="Логотип Седона">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav-list menu-list">
-          <li class="menu-list__item menu-list__item--current">
-            <a class="menu-list__link" href="./index.html">Главная</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="./media.html">Фото и видео</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="./form.html">Форма отзыва</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
-          </li>
-        </ul>
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item menu-list__item--current">
+              <a class="menu-list__link" href="./index.html">Главная</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="./media.html">Фото и видео</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="./form.html">Форма отзыва</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
       </nav>
     </header>
     <main class="main main--container">
@@ -128,12 +132,10 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <picture>
-          <source media="(max-width: 767px)" srcset="./img/map-mobile.jpg">
-          <source media="(max-width: 1199px)" srcset="./img/map-tablet.jpg">
-          <source media="(min-width: 1200px)" srcset="./img/map-desktop.jpg">
-          <img src="./img/map-mobile.jpg" alt="Карта" width="282" height="214">
-        </picture>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13688501386!2d-111.83633794319954!3d34.854441887852275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1683740609850!5m2!1sru!2sru"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
     <footer class="footer">
@@ -178,7 +180,7 @@
         </li>
       </ul>
       <a class="developer" href="https://htmlacademy.ru/">Разработано
-        <svg class="developer__img" width="29" height="35" viewBox="0 0 29 35" fill="none"
+        <svg class="developer__img" width="29" height="35" viewBox="0 0 29 35" fill="black"
           xmlns="http://www.w3.org/2000/svg">
           <path
             d="M14.65 0.449951H14.55L1.05 1.84995V26.55L14.55 34.5499L27.95 26.55V1.84995L14.65 0.449951ZM26.05 12.55L14.55 5.74995V5.64995H14.45L14.35 5.54995V5.64995L2.95 12.55V3.54995L14.45 2.34995L26.05 3.54995V12.55ZM14.45 7.24995L25.95 13.95L21.45 16.55L14.35 12.35V13.75L20.25 17.25L19.35 17.75L14.35 14.75V16.15L18.15 18.45L17.35 18.95L14.35 17.15V18.55L16.25 19.65L14.45 20.75L3.05 14.05L14.45 7.24995ZM2.95 15.55L14.35 22.35V23.35L6.45 18.65V20.05L14.45 24.85V25.95L6.45 21.25V22.65L14.45 27.45L22.55 22.55V17.35L25.95 15.35V25.35L14.45 32.25L2.95 25.45V15.55Z"
@@ -187,6 +189,7 @@
       </a>
     </footer>
   </div>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

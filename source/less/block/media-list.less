@@ -41,6 +41,7 @@
   }
 
   img {
+    display: block;
     width: 100%;
 
     @media (min-width: @tablet-width) {
@@ -107,14 +108,14 @@
 
 .media-list__item:first-child .media-list__container {
   @media (min-width: @desktop-width) {
-    top: 828px;
+    top: 853px;
   }
 }
 
 .media-list__item:nth-child(n+2) .media-list__container {
   @media (min-width: @desktop-width) {
     width: 400px;
-    top: 1100px;
+    top: 1120px;
   }
 }
 
@@ -127,6 +128,7 @@
     text-align: left;
     margin: 0;
     padding: 0;
+    font-size: 14px;
   }
 
   @media (min-width: @desktop-width) {
@@ -137,13 +139,13 @@
 }
 
 .media-list__author {
-  .text-description;
   padding-top: 0;
   text-align: left;
 
   @media (min-width: @tablet-width) {
     margin: 0;
     padding: 0;
+    font-size: 14px;
   }
 
   @media (min-width: @desktop-width) {
