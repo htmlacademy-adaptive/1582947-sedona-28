@@ -98,7 +98,7 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    padding: 22px 20px 15px 20px;
+
     justify-content: space-between;
     color: #ffffff;
     background-color: #00000046;
@@ -108,48 +108,86 @@
 
 .media-list__item:first-child .media-list__container {
   @media (min-width: @desktop-width) {
-    top: 853px;
+    top: 963px;
+    padding: 20px 22px 16px 20px;
+  }
+
+  .media-list__title {
+    .text-title;
+    padding-top: 15px;
+    margin: 0;
+
+    @media (min-width: @tablet-width) {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+    }
+
+    @media (min-width: @desktop-width) {
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .media-list__author {
+    padding-top: 0;
+    text-align: left;
+
+    @media (min-width: @tablet-width) {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 0;
+      padding: 0;
+    }
   }
 }
 
 .media-list__item:nth-child(n+2) .media-list__container {
   @media (min-width: @desktop-width) {
     width: 400px;
-    top: 1120px;
+    top: 1231px;
+    padding: 15px 22px 18px 24px;
   }
-}
 
-.media-list__title {
-  .text-title;
-  padding-top: 15px;
-  margin: 0;
+  .media-list__title {
+    .text-title;
+    padding-top: 15px;
+    margin: 0;
 
-  @media (min-width: @tablet-width) {
+    @media (min-width: @tablet-width) {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+    }
+
+    @media (min-width: @desktop-width) {
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .media-list__author {
+    padding-top: 0;
     text-align: left;
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-  }
 
-  @media (min-width: @desktop-width) {
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-  }
-}
+    @media (min-width: @tablet-width) {
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+    }
 
-.media-list__author {
-  padding-top: 0;
-  text-align: left;
-
-  @media (min-width: @tablet-width) {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-    padding: 0;
+    @media (min-width: @desktop-width) {
+      margin-top: 3px;
+      padding: 0;
+    }
   }
 }
+

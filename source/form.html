@@ -40,15 +40,15 @@
         </div>
       </nav>
     </header>
-
-
-
     <main class="main main--container">
       <section class="hero-block hero-block--media">
         <h1 class="visually-hidden">Cедону.</h1>
-        <img class="logo-catalog" src="./img/sedona.svg" alt="Добро пожаловать в Седону" width="239" height="39">
-      </section>
-
+        <picture>
+          <source media="(max-width: 767px)" srcset="./img/sedona.svg">
+          <source media="(max-width: 1199px)" srcset="./img/sedona-tablet.svg">
+          <source media="(min-width: 1200px)" srcset="./img/sedona-desktop.svg">
+          <img class="logo-catalog" src="./img/sedona.svg" alt="Добро пожаловать в Седону" width="239" height="39">
+        </picture>      </section>
       <section class="feedback">
         <h2 class="feedback__title">Оставьте свой отзыв</h2>
         <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
