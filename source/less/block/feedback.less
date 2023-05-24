@@ -1,12 +1,32 @@
 .feedback {
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 65px 0 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 115px 0 0 0;
+  }
 }
 
 .feedback__title {
   .text-title;
   text-align: center;
   padding-top: 36px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+  }
 }
 
 .feedback__description {
@@ -14,6 +34,16 @@
   text-align: center;
   padding-top: 24px;
   padding-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin: 20px 0 0 0;
+    padding: 0 100px 0 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 32px 380px 28px 380px;
+    margin: 0;
+  }
 }
 
 .feedback__form {
@@ -23,10 +53,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0 60px 0 60px;
+    margin: 109px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
-    padding: 0 120px 0 120px;
+    padding: 40px 120px 0 120px;
+    margin: 0;
   }
 }

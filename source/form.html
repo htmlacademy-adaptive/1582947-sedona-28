@@ -48,7 +48,8 @@
           <source media="(max-width: 1199px)" srcset="./img/sedona-tablet.svg">
           <source media="(max-width: 767px)" srcset="./img/sedona.svg">
           <img class="logo-catalog" src="./img/sedona.svg" alt="Добро пожаловать в Седону" width="239" height="39">
-        </picture>      </section>
+        </picture>
+      </section>
       <section class="feedback">
         <h2 class="feedback__title">Оставьте свой отзыв</h2>
         <p class="feedback__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
@@ -56,7 +57,7 @@
           достопримечательностях</p>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="form__group">
-            <legend class="form__title">Представьтесь</legend>
+            <legend class="form__title">Представьтесь:</legend>
             <ul class="personal-info-list">
               <li class="personal-info-list__item">
                 <label for="name" class="personal-info-list__label">Имя<sup>*</sup>:</label>
@@ -74,11 +75,11 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--contact">
             <legend class="form__title">Контактная информация:</legend>
             <ul class="contact-list">
               <li class="contact-list__item">
-                <label for="phone" class="contact-list__label">Контактная информация<sup>*</sup>:</label>
+                <label for="phone" class="contact-list__label">Контактный телефон<sup>*</sup>:</label>
                 <div class="contact-list__container">
                   <input class="contact-list__input" type="tel" name="phone" id="phone" placeholder="Введите телефон"
                     required>
@@ -108,8 +109,8 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__group">
-            <legend class="form__title">Ваши общие впечатление:</legend>
+          <fieldset class="form__group form__group--impressions">
+            <legend class="form__title">Ваше общее впечатление:</legend>
             <ul class="impressions-list">
               <li class="impressions-list__item">
                 <label for="positive" class="impressions-list__label impressions-list__radio">
@@ -135,8 +136,8 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__group">
-            <legend class="form__title">Посещенные достопримечательности:</legend>
+          <fieldset class="form__group form__group--visit">
+            <legend class="form__title ">Посещенные <br>достопримечательности:</legend>
             <ul class="visit-list">
               <li class="visit-list__item">
                 <label for="devils-bridge" class="visit-list__checkbox">
@@ -167,13 +168,15 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--emotions">
             <legend class="form__title">Опишите свои эмоции:</legend>
-            <textarea class="emotions-area" name="emotions" id="emotions"
-              placeholder="Опишите подробно все свои восторги" cols="25" rows="5"></textarea>
-            <div class="form__button-container">
-              <button class="button send-feedback" type="submit">Отправить отзыв</button>
-              <span class="required-text"><sup>*</sup>—Обязательные поля</span>
+            <div class="form__container">
+              <textarea class="emotions-area" name="emotions" id="emotions"
+                placeholder="Опишите подробно все свои восторги" cols="25" rows="5"></textarea>
+              <div class="form__button-container">
+                <button class="button send-feedback" type="submit">Отправить отзыв</button>
+                <span class="required-text"><sup>*</sup>—Обязательные поля</span>
+              </div>
             </div>
           </fieldset>
         </form>
