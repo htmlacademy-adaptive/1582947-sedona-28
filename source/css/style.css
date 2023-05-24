@@ -544,7 +544,6 @@ a {
   font-family: "PT Sans", sans-serif;
 }
 .feedback {
-  padding: 0;
   margin: 0;
 }
 @media (min-width: 768px) {
@@ -564,6 +563,7 @@ a {
   text-transform: uppercase;
   text-align: center;
   padding-top: 36px;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .feedback__title {
@@ -585,8 +585,7 @@ a {
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 24px;
-  padding-bottom: 28px;
+  margin: 24px 0 0 0;
 }
 @media (min-width: 768px) {
   .feedback__description {
@@ -601,7 +600,7 @@ a {
   }
 }
 .feedback__form {
-  padding: 0 20px;
+  padding: 52px 20px 0 20px;
 }
 @media (min-width: 768px) {
   .feedback__form {
@@ -641,7 +640,7 @@ a {
 }
 .form__group {
   border: none;
-  padding: 28px 0 0 0;
+  padding: 15px 0 0 0;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -650,6 +649,11 @@ a {
 @media (min-width: 768px) {
   .form__group {
     padding: 26px 0 0 0;
+  }
+}
+@media (min-width: 1200px) {
+  .form__group {
+    padding: 28px 0 0 0;
   }
 }
 @media (min-width: 768px) {
@@ -699,6 +703,7 @@ a {
   .form__title {
     font-size: 21px;
     padding: 0;
+    margin: 25px 0 0 0;
   }
 }
 .form__button-container {
@@ -1580,8 +1585,8 @@ a {
   flex-direction: column;
   list-style-type: none;
   padding: 0;
-  margin: 28px 0 8px 0;
-  gap: 16px;
+  margin: 0 0 8px 0;
+  gap: 13px;
 }
 @media (min-width: 768px) {
   .personal-info-list {
@@ -1592,6 +1597,7 @@ a {
 @media (min-width: 1200px) {
   .personal-info-list {
     margin: 21px 0 8px 0;
+    gap: 16px;
   }
 }
 .personal-info-list__item {
@@ -1618,6 +1624,7 @@ a {
   background-color: #f2f2f2;
   outline: none;
   border: none;
+  font-size: 16px;
 }
 @media (min-width: 768px) {
   .personal-info-list__input {
@@ -1789,6 +1796,7 @@ a {
   min-height: 100vh;
   flex-direction: column;
   margin: 0 auto;
+  width: 320px;
 }
 @media (min-width: 768px) {
   .page-container {
