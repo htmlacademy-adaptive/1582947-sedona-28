@@ -7,11 +7,16 @@
   gap: 16px;
 
   @media (min-width: @tablet-width) {
+    margin: 5px 0 42px 0;
+    padding: 0 85px 0 85px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 68px;
   }
 }
 
