@@ -1,0 +1,22 @@
+.page-container {
+  flex-grow: 1;
+  background-color: #ffffff;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+    background-color: @background-global-desktop;
+  }
+}
+
+.page-container--shadow {
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}

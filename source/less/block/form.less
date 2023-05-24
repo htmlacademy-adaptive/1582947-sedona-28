@@ -1,9 +1,18 @@
 .form__group {
   border: none;
-  padding: 0;
+  padding: 15px 0 0 0;
   margin: 0;
   display: flex;
   flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding: 26px 0 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 28px 0 0 0;
+  }
 }
 
 .form__group:first-child {
@@ -18,7 +27,7 @@
 }
 
 
-.form__group:first-child + fieldset {
+.form__group:nth-child(2) {
   @media (min-width: @tablet-width) {
     padding: 0 0 0 28px;
     border-left: 1px solid #0000004d;
@@ -34,12 +43,26 @@
     grid-column: 1/-1;
     border-top: 2px solid #0000004d;
     align-items: center;
+
+    .form__title {
+      @media (min-width: @desktop-width) {
+        padding: 0 47px 0 47px;
+      }
+    }
   }
 }
 
 .form__title {
   .text-title;
   text-align: center;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding: 0;
+    margin: 25px 0 0 0;
+  }
 }
 
 .form__button-container {
@@ -47,4 +70,48 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 44px 0 64px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+.form__group--impressions {
+  @media (min-width: @tablet-width) {
+    margin: 60px 0 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 61px 0 0 0;
+  }
+}
+
+.form__group--visit {
+  @media (min-width: @desktop-width) {
+    margin: 72px 0 0 0;
+  }
+}
+
+.form__group--emotions {
+  @media (min-width: @desktop-width) {
+    margin: 48px 0 0 0;
+  }
+}
+
+.form__container {
+  width: 100%;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 48px 0 0 0;
+    padding: 0 96px 0 96px;
+  }
 }

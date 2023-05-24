@@ -4,6 +4,26 @@
   color: #000000;
   text-decoration: none;
   align-items: center;
+
+  &:hover {
+    color: #81b3d2;
+
+    & path {
+      fill: #81b3d2;
+    }
+  }
+
+  &:active {
+    color: #b3b3b3;
+
+    & path {
+      fill: #b3b3b3;
+    }
+  }
+
+  &:disabled {
+    color: rgba(255, 255, 255, 0.1);
+  }
 }
 
 .developer__img {

@@ -1,19 +1,131 @@
 .main-nav {
   display: block;
-  background-image: url("../img/icon-menu.svg");
+  position: absolute;
   outline: none;
   border: none;
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  width: 23px;
-  height: 22px;
-  margin: 17px 20px;
+  right: 0;
   padding: 0;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
+    position: static;
     background-image: none;
     width: 100%;
     margin: 0;
     padding: 0;
+  }
+}
+
+.main-nav__toggle {
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 2;
+    display: block;
+    width: 23px;
+    height: 24px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 23px;
+  height: 4px;
+  background-color: #81b3d2;
+  box-shadow: 0 10px 0 0 #81b3d2, 0 20px 0 0 #81b3d2;
+}
+
+// .main-nav--closed .main-nav__toggle:active::before {
+//   background-color: fade(#ffffff, 30%);
+//   box-shadow:
+//     0 8px 0 0 fade(#ffffff, 30%),
+//     0 16px 0 0 fade(#ffffff, 30%);
+// }
+
+
+.main-nav--opened .main-nav__toggle {
+  top: 17px;
+  right: 20px;
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 22px;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+
+.main-nav--closed .menu-list__item {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  .main-nav--closed .menu-list__item--active {
+    display: block;
+  }
+
+  .main-nav--closed .menu-list__item--active a {
+    padding-right: 70px;
+    padding-left: 70px;
+    text-align: center;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav--closed.main-nav--nojs {
+  .main-nav__toggle {
+    display: none;
   }
 }
