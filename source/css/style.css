@@ -1,6 +1,6 @@
 .triangle {
   background-image: url("../img/triangle.svg");
-  background-size: auto;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
   padding: 70px 18px 38px 18px;
@@ -89,6 +89,11 @@ a {
   background-color: #81b3d2;
   color: #ffffff;
   padding: 37px 18px 37px 18px;
+}
+@media (max-width: 767px) {
+  .advantages-list__container--color-container:first-child {
+    padding: 21% 18px 37px 18px;
+  }
 }
 @media (min-width: 768px) {
   .advantages-list__container--color-container img {
@@ -668,6 +673,11 @@ a {
   line-height: 0;
   padding: 90px 17px 85px 19px;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero-block {
+    background-image: url("../img/divider.svg"), url("../img/back-mobile2x.jpg");
+  }
+}
 .hero-block img {
   width: auto;
 }
@@ -677,10 +687,20 @@ a {
     padding: 77px 19px 91px 19px;
   }
 }
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-block {
+    background-image: url("../img/divider.svg"), url("../img/back-tablet2x.jpg");
+  }
+}
 @media (min-width: 1200px) {
   .hero-block {
     background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop.jpg");
     padding: 78px 19px 90px 19px;
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-block {
+    background-image: url("../img/divider.svg"), url("../img/back-desktop2x.jpg");
   }
 }
 .hero-block--media {
@@ -694,6 +714,11 @@ a {
   line-height: 0;
   padding: 52px 46px 67px 46px;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero-block--media {
+    background-image: url("../img/divider.svg"), url("../img/back-mobile2x.jpg");
+  }
+}
 .hero-block--media img {
   width: auto;
 }
@@ -703,12 +728,22 @@ a {
     padding: 95px 154px 117px 154px;
   }
 }
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-block--media {
+    background-image: url("../img/divider.svg"), url("../img/back-tablet2x.jpg");
+  }
+}
 @media (min-width: 1200px) {
   .hero-block--media {
     background-image: url("../img/intro-triangle-desktop.svg"), url("../img/back-desktop.jpg");
     background-size: 100%, 160%;
     background-position: bottom, -680px -500px;
     padding: 101px 154px 120px 154px;
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-block--media {
+    background-image: url("../img/divider.svg"), url("../img/back-desktop2x.jpg");
   }
 }
 .impressions-list {
@@ -1488,6 +1523,9 @@ a {
     padding: 0;
   }
 }
+.services-list__container {
+  margin: 0 0 0 20px;
+}
 @media (min-width: 768px) {
   .services-list__container {
     display: flex;
@@ -1506,8 +1544,6 @@ a {
   }
 }
 .services-list__item--home {
-  display: flex;
-  justify-content: center;
   background-image: url("../img/home.svg");
   background-repeat: no-repeat;
 }
@@ -1525,7 +1561,6 @@ a {
 }
 .services-list__item--food {
   display: flex;
-  justify-content: center;
   background-image: url("../img/food.svg");
   background-repeat: no-repeat;
 }
@@ -1543,7 +1578,6 @@ a {
 }
 .services-list__item--souvenirs {
   display: flex;
-  justify-content: center;
   background-image: url("../img/souvenirs.svg");
   background-repeat: no-repeat;
 }

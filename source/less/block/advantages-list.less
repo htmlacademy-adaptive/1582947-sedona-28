@@ -46,6 +46,12 @@
   .set-color(#81b3d2);
   padding: 37px 18px 37px 18px;
 
+  &:first-child {
+    @media (max-width: @mobile-width-only) {
+      padding: 21% 18px 37px 18px;
+    }
+  }
+
   img {
     @media (min-width: @tablet-width) {
       grid-column: 2/4;
