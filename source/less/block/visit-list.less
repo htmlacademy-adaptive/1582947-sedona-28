@@ -56,6 +56,23 @@
   width: 46px;
   background-color: #f2f2f2;
   border-radius: 4px;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px #e5e5e5 inset;
+  }
+
+  &:active {
+    background-color: #e5e5e5;
+  }
+
+  &:disabled {
+    background-color: #f7f7f7;
+  }
 }
 
 .visit-list__box::after {
