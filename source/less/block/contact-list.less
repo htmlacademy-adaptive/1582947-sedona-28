@@ -39,6 +39,25 @@
   outline: none;
   border: none;
 
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px #e5e5e5 inset;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px #e5e5e5 inset;
+  }
+
+  &:disabled {
+    background-color: #f7f7f7;
+  }
+
   @media (min-width: @desktop-width) {
     padding: 15px;
     font-size: 16px;
