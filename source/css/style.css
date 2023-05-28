@@ -1976,7 +1976,7 @@ a {
 .checkbox {
   position: absolute;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .check-radio {
   position: absolute;
@@ -1994,4 +1994,3 @@ a {
 .checkbox:checked + .check-radio {
   background-color: #4a90e2;
 }
-/*# sourceMappingURL=style.css.map */
