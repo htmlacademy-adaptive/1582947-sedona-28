@@ -16,8 +16,12 @@
   }
 
   @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-auto-flow: row dense;
     margin: 17px 0 0 0;
-    gap: 72px;
+    gap: 28px;
   }
 }
 
@@ -33,6 +37,7 @@
   cursor: pointer;
   font-size: 18px;
   line-height: 46px;
+  font-weight: 700;
 }
 
 .impressions-list__radio input {
@@ -57,7 +62,7 @@
 
   &:focus {
     background-color: #ffffff;
-    box-shadow: 0 0 0 4px #e5e5e5 inset;
+    box-shadow: 0 0 0 4px #000000 inset;
   }
 
   &:active {
