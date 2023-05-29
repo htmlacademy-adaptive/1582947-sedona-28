@@ -22,16 +22,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-}
-
-.services-list__item {
-  @media (min-width: @tablet-width) {
-    padding: 158px 33px 60px 33px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 168px 50px 69px 50px;
+    margin: 0;
+    width: 100%;
   }
 }
 
@@ -41,12 +37,23 @@
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/icon-house-tablet.svg");
-    background-position: 50% 23%;
+    background-position: 54% 23%;
+    padding: 156px 25px 60px 25px;
+    line-height: 21px;
+
+    .services-list__title {
+      margin-left: 15px;
+    }
+
+    .services-list__description {
+      margin-left: 15px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/icon-house-desktop.svg");
-    background-position: 50% 27%;
+    background-position: 52% 27%;
+    padding: 171px 50px 67px 68px;
   }
 }
 
@@ -57,12 +64,15 @@
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/icon-burger-tablet.svg");
-    background-position: 50% 28%;
+    background-position: 50% 24%;
+    padding: 155px 42px 60px 42px;
+    line-height: 21px;
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/icon-burger-desktop.svg");
     background-position: 50% 28%;
+    padding: 168px 50px 67px 51px;
   }
 }
 
@@ -73,12 +83,15 @@
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/icon-gift-tablet.svg");
-    background-position: 50% 28%;
+    background-position: 48% 26%;
+    padding: 153px 40px 60px 20px;
+    line-height: 21px;
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/icon-gift-desktop.svg");
-    background-position: 50% 28%;
+    background-position: 47% 27%;
+    padding: 172px 50px 67px 37px;
   }
 }
 
@@ -91,7 +104,12 @@
     padding: 0;
     margin: 0;
     text-align: center;
-    font-size: 22px;
+    font-size: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+    padding: 0;
   }
 }
 
@@ -105,5 +123,11 @@
     padding: 0;
     margin-top: 25px;
     text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    line-height: 21px;
+    margin: 23px 0 0 0;
   }
 }
