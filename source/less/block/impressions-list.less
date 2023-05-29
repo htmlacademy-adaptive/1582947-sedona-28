@@ -21,7 +21,7 @@
     grid-template-rows: auto;
     grid-auto-flow: row dense;
     margin: 17px 0 0 0;
-    gap: 28px;
+    gap: 67px;
   }
 }
 
@@ -43,7 +43,7 @@
 .impressions-list__radio input {
   position: absolute;
   z-index: -1;
-  opacity: 0;
+  opacity: 1;
 }
 
 .impressions-list__box {
@@ -61,7 +61,7 @@
   }
 
   &:focus {
-    background-color: #ffffff;
+    background-color: #ff0202;
     box-shadow: 0 0 0 4px #000000 inset;
   }
 
@@ -79,7 +79,6 @@
   position: absolute;
   display: none;
 }
-
 
 .impressions-list__radio input:checked ~ .impressions-list__box::after {
   display: block;

@@ -17,11 +17,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    gap: 68px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 28px 14px 0 50px;
   }
 }
 

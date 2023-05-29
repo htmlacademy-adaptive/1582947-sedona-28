@@ -12,7 +12,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 21px 0 8px 0;
+    margin: 25px 0 8px 0;
+    gap: 11px;
   }
 }
 
@@ -27,6 +28,7 @@
 .contact-list__label {
   .text-description;
   padding-left: 16px;
+  margin-bottom: 3px;
 }
 
 .contact-list__input {
@@ -59,8 +61,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 15px;
-    font-size: 16px;
+    padding: 15px 16px 17px 16px;
+    font-size: 18px;
+
+    &::placeholder {
+      color: #0000004d;
+    }
   }
 }
 
@@ -81,7 +87,11 @@
 
 .email-icon {
   display: block;
-  padding: 23px 21px;
+  padding: 21px 21px;
   background-color: #e6e6e6;
   line-height: 0;
+
+  @media (min-width: @desktop-width) {
+    padding: 21px;
+  }
 }
